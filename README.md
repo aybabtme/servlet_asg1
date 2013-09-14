@@ -1,1 +1,2 @@
-# Bullshit Assignment\nThis assignment is crap.
+# Bullshit Assignment
+This assignment is crap.
