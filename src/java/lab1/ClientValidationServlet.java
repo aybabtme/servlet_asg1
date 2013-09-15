@@ -35,13 +35,8 @@ public class ClientValidationServlet extends HttpServlet {
 
         validateName(param.get("firstname"), errorList, "firstname");
         validateName(param.get("surname"), errorList, "surname");
-
         validateAge(param.get("age"), errorList);
         validateGender(param.get("gender"), errorList);
-
-        for (String error : errorList) {
-            System.out.println(error);
-        }
         
         request.setAttribute("errors", errorList);
         request.getRequestDispatcher("/WEB-INF/validate.jsp").forward(request, response);
